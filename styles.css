@@ -1,14 +1,171 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
+    background: url('images/swmainbg.jpg') no-repeat fixed;
+    background-position: right;
+    background-size: cover;
+}
+
+header {
+    background-image: url('images/bgspaceimg.jpg');
+    height: 10vh;
+}
+
+h1.starFont {
+    /* color: yellow; */
+    color: gold;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: 'Star Wars', sans-serif;
 }
 
 .buttons {
     display: flex;
     justify-content: space-around;
+    padding: 5px;
+    background-color: grey;
 }
 
 .btn {
     /* margin: 10px; */
     border-radius: 5px;
+}
+
+/* characters */
+.name {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3rem;
+    text-shadow: -10px 15px grey;
+}
+
+.character {
+    padding: 5px;
+    border-radius:10px;
+    margin: 5px;
+    background-color: tan;
+}
+
+span.character {
+    float: right;
+}
+
+/* films */
+.film {
+    margin-top: 2rem;
+}
+
+.title,
+.episode,
+.description {
+    text-align: center;
+}
+
+.title,
+.episode {
+    text-shadow: -10px 10px grey;
+    font-size: 30px;
+}
+
+.episode {
+    margin: 2rem 0 2rem;
+}
+
+.description {
+    line-height: 2rem;
+    padding: 10px;
+}
+
+span.film {
+    margin: 5px;
+}
+
+/* Planets */
+.planetDiv {
+    margin: 2rem 0 2rem;
+}
+
+.planetName {
+    text-align: center;
+    text-shadow: -10px 10px grey;
+    font-size:25px;
+    margin: 2rem;
+}
+
+.rotation,
+.orbital_period,
+.diameter,
+.climate,
+.gravity,
+.terrain,
+.surface_water,
+.population {
+    padding: 5px 10px;
+    background-color: tan;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+span.info {
+    float: right;
+}
+
+/* Starships */
+.model {
+    padding: 1rem;
+}
+
+#ship_info {
+    float: right;
+}
+
+.starship_name {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+    text-shadow: -10px 10px grey;
+}
+
+.model,
+.manufacturer,
+.atmosphering_speed,
+.crew,
+.passengers,
+.cargo,
+.consumables,
+.hyperdrive,
+.MGLT,
+.starship_class {
+    padding: 0.8rem;
+    font-size: 12px;
+        /* border: 2px solid black; */
+        border-radius: 8px;
+        margin: 1rem;
+        background-color: tan;
+}
+
+.manufacturer {
+    font-size: 10px;
+}
+
+.gravity {
+    font-size: 15px;
+}
+
+.terrain {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .description {
+        padding: 2rem;
+        font-size: 20px;
+    }
 }
